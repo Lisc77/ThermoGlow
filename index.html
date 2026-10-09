@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="es" data-bs-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ThermoGlow: vasos que cambian de color y recursos educativos de desarrollo web.">
+    <title>Inicio | ThermoGlow</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+        <div class="container"><a class="navbar-brand fw-bold" href="index.html"><span class="brand-mark"><i
+                        class="bi bi-cup-hot-fill"></i></span> Thermo<span class="text-primary">Glow</span></a><button
+                class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menú"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="javascript.html">JavaScript</a></li>
+                    <li class="nav-item"><a class="nav-link" href="jquery.html">jQuery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="json.html">JSON</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hosting.html">Hosting y dominios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cuestionario.html">Cuestionario</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    <li class="nav-item ms-lg-2"><button class="btn btn-outline-secondary btn-sm" id="btnTema"
+                            type="button" aria-label="Activar tema oscuro"><i class="bi bi-moon-stars-fill"></i><span
+                                class="ms-1 d-lg-none">Cambiar tema</span></button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="container py-5">
+            <div class="row align-items-center g-5 py-lg-4">
+                <div class="col-lg-6"><span
+                        class="badge rounded-pill text-bg-primary-subtle text-primary-emphasis mb-3">Una colección
+                        diferente</span>
+                    <h1 class="display-4 fw-bold lh-sm">Tu bebida.<br><span class="text-primary">Tu
+                            temperatura.</span><br>Tu color.</h1>
+                    <p class="lead text-secondary my-4">Vasos que cambian de apariencia cuando cambia la temperatura.
+                        Conoce la colección ThermoGlow y descubre también cómo se construye una página web.</p><a
+                        class="btn btn-primary btn-lg me-2 mb-2" href="#productos">Ver productos <i
+                            class="bi bi-arrow-right ms-1"></i></a><a class="btn btn-outline-secondary btn-lg mb-2"
+                        href="javascript.html">Aprender desarrollo web</a>
+                    <div class="d-flex gap-4 mt-4 small text-secondary"><span><i
+                                class="bi bi-palette text-primary me-1"></i> Diseños coloridos</span><span><i
+                                class="bi bi-cup-straw text-primary me-1"></i> Para tu día a día</span></div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-art">
+                        <div class="hero-copy-label"><i class="bi bi-stars text-primary me-2"></i>El color cambia
+                            contigo</div><img
+                            src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=1100&q=85"
+                            alt="Vasos y bebidas de colores sobre una mesa" class="img-fluid hero-img">
+                        <div class="hero-caption"><i class="bi bi-thermometer-half text-primary me-2"></i>Frío o calor:
+                            cada sorbo tiene su estilo.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container py-4" aria-label="Galería de ThermoGlow">
+            <div class="d-flex justify-content-between align-items-end mb-3">
+                <div>
+                    <p class="section-kicker mb-1">MIRA LOS DETALLES</p>
+                    <h2 class="h2 fw-bold mb-0">Un vistazo a la colección</h2>
+                </div><span class="text-secondary small d-none d-md-inline">Desliza para ver más</span>
+            </div>
+            <div id="carruselThermoGlow" class="carousel slide carousel-fade rounded-4 overflow-hidden shadow-sm"
+                data-bs-ride="carousel" data-bs-interval="4000">
+                <div class="carousel-indicators"><button type="button" data-bs-target="#carruselThermoGlow"
+                        data-bs-slide-to="0" class="active" aria-current="true" aria-label="Imagen 1"></button><button
+                        type="button" data-bs-target="#carruselThermoGlow" data-bs-slide-to="1"
+                        aria-label="Imagen 2"></button><button type="button" data-bs-target="#carruselThermoGlow"
+                        data-bs-slide-to="2" aria-label="Imagen 3"></button></div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active"><img
+                            src="https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&w=1400&q=85"
+                            class="d-block w-100 carousel-photo" alt="Tazas y vasos sobre una mesa">
+                        <div class="carousel-caption text-start"><span class="badge text-bg-light text-dark mb-2">01 ·
+                                Colección</span>
+                            <h3 class="fw-bold">Detalles para todos los días</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item"><img
+                            src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=1400&q=85"
+                            class="d-block w-100 carousel-photo" alt="Bebidas refrescantes en vasos">
+                        <div class="carousel-caption text-start"><span class="badge text-bg-light text-dark mb-2">02 ·
+                                Color</span>
+                            <h3 class="fw-bold">Dale otro tono a tu bebida</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item"><img
+                            src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=1400&q=85"
+                            class="d-block w-100 carousel-photo" alt="Bebida servida en una cafetería">
+                        <div class="carousel-caption text-start"><span class="badge text-bg-light text-dark mb-2">03 ·
+                                Tu rutina</span>
+                            <h3 class="fw-bold">Un diseño que acompaña tu día</h3>
+                        </div>
+                    </div>
+                </div><button class="carousel-control-prev" type="button" data-bs-target="#carruselThermoGlow"
+                    data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span
+                        class="visually-hidden">Anterior</span></button><button class="carousel-control-next"
+                    type="button" data-bs-target="#carruselThermoGlow" data-bs-slide="next"><span
+                        class="carousel-control-next-icon" aria-hidden="true"></span><span
+                        class="visually-hidden">Siguiente</span></button>
+            </div>
+        </section>
+        <section class="container pb-5">
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="info-tile h-100"><i class="bi bi-snow fs-3 text-primary"></i>
+                        <h3 class="h5 mt-3">Con bebidas frías</h3>
+                        <p class="mb-0 text-secondary">La superficie puede mostrar tonos distintos al enfriarse.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info-tile h-100"><i class="bi bi-sun fs-3 text-primary"></i>
+                        <h3 class="h5 mt-3">Con bebidas calientes</h3>
+                        <p class="mb-0 text-secondary">Los materiales termocrómicos responden a los cambios de
+                            temperatura.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info-tile h-100"><i class="bi bi-brush fs-3 text-primary"></i>
+                        <h3 class="h5 mt-3">A tu manera</h3>
+                        <p class="mb-0 text-secondary">Una propuesta para estudiantes y jóvenes que disfrutan los
+                            diseños originales.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="productos" class="container py-5">
+            <div class="text-center mb-4">
+                <p class="section-kicker mb-1">ELIGE EL TUYO</p>
+                <h2 class="display-6 fw-bold">La colección ThermoGlow</h2>
+                <p class="text-secondary">Modelos de ejemplo para presentar la idea del producto.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <article class="card product-card h-100"><img
+                            src="https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top product-photo" alt="Vaso de estilo clásico">
+                        <div class="card-body"><span
+                                class="badge text-bg-primary-subtle text-primary-emphasis">Esencial</span>
+                            <div class="d-flex justify-content-between gap-2 mt-2">
+                                <h3 class="h5">ThermoGlow Classic</h3><strong>$19.99</strong>
+                            </div>
+                            <p class="text-secondary">Un vaso de 500 ml para acompañar tus clases, paseos o tiempo
+                                libre.</p><button class="btn btn-outline-primary w-100 btn-interes"
+                                data-producto="ThermoGlow Classic">Me interesa</button>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <article class="card product-card h-100"><img
+                            src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top product-photo" alt="Bebidas frías en vasos">
+                        <div class="card-body"><span class="badge text-bg-warning">Mayor capacidad</span>
+                            <div class="d-flex justify-content-between gap-2 mt-2">
+                                <h3 class="h5">ThermoGlow Pro</h3><strong>$29.99</strong>
+                            </div>
+                            <p class="text-secondary">Modelo de 750 ml pensado para jornadas largas y bebidas favoritas.
+                            </p><button class="btn btn-outline-primary w-100 btn-interes"
+                                data-producto="ThermoGlow Pro">Me interesa</button>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <article class="card product-card h-100"><img
+                            src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top product-photo" alt="Bebida servida en un vaso">
+                        <div class="card-body"><span class="badge text-bg-danger">Colorido</span>
+                            <div class="d-flex justify-content-between gap-2 mt-2">
+                                <h3 class="h5">ThermoGlow Mini</h3><strong>$14.99</strong>
+                            </div>
+                            <p class="text-secondary">Un formato compacto de 350 ml para llevar a donde quieras.</p>
+                            <button class="btn btn-outline-primary w-100 btn-interes" data-producto="ThermoGlow Mini">Me
+                                interesa</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <p class="small text-secondary mt-3"><i class="bi bi-info-circle me-1"></i>Los modelos, precios y
+                características son demostrativos para la actividad escolar.</p>
+        </section>
+        <section id="contacto" class="container py-5">
+            <div class="row g-4 align-items-stretch">
+                <div class="col-lg-5">
+                    <div class="contact-intro h-100 p-4 p-lg-5 rounded-4">
+                        <p class="section-kicker mb-2">HABLEMOS</p>
+                        <h2 class="fw-bold mb-3">¿Tienes alguna consulta?</h2>
+                        <p class="text-secondary">Escríbenos si quieres saber más sobre los modelos, sus capacidades o
+                            la idea de ThermoGlow.</p>
+                        <div class="d-flex gap-3 align-items-start mt-4"><span class="contact-icon"><i
+                                    class="bi bi-chat-dots"></i></span>
+                            <div>
+                                <h3 class="h6 fw-bold mb-1">Atención a tus preguntas</h3>
+                                <p class="text-secondary small mb-0">Completa el formulario y verás la confirmación de
+                                    tu mensaje.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3 align-items-start mt-3"><span class="contact-icon"><i
+                                    class="bi bi-shield-check"></i></span>
+                            <div>
+                                <h3 class="h6 fw-bold mb-1">Formulario de demostración</h3>
+                                <p class="text-secondary small mb-0">En esta versión escolar, los mensajes se guardan
+                                    solamente en este navegador; todavía no se envían a un servidor.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="card contact-card h-100 shadow-sm">
+                        <div class="card-body p-4 p-lg-5">
+                            <h3 class="h4 fw-bold mb-1">Envíanos un mensaje</h3>
+                            <p class="text-secondary mb-4">Los campos marcados con * son obligatorios.</p>
+                            <form id="formContacto" novalidate>
+                                <div class="row g-3">
+                                    <div class="col-md-6"><label for="contactoNombre" class="form-label">Nombre
+                                            *</label><input class="form-control" id="contactoNombre" name="nombre"
+                                            autocomplete="name" maxlength="80" required>
+                                        <div class="invalid-feedback">Escribe tu nombre.</div>
+                                    </div>
+                                    <div class="col-md-6"><label for="contactoCorreo" class="form-label">Correo
+                                            electrónico *</label><input class="form-control" type="email"
+                                            id="contactoCorreo" name="correo" autocomplete="email" maxlength="120"
+                                            required>
+                                        <div class="invalid-feedback">Escribe un correo válido.</div>
+                                    </div>
+                                    <div class="col-12"><label for="contactoAsunto" class="form-label">Motivo de
+                                            contacto *</label><select class="form-select" id="contactoAsunto"
+                                            name="asunto" required>
+                                            <option value="" selected disabled>Selecciona una opción</option>
+                                            <option>Información de productos</option>
+                                            <option>Personalización de vasos</option>
+                                            <option>Precios y capacidades</option>
+                                            <option>Comentario sobre la página</option>
+                                            <option>Otro</option>
+                                        </select>
+                                        <div class="invalid-feedback">Selecciona el motivo de tu consulta.</div>
+                                    </div>
+                                    <div class="col-12"><label for="contactoMensaje" class="form-label">Mensaje
+                                            *</label><textarea class="form-control" id="contactoMensaje" name="mensaje"
+                                            rows="4" minlength="10" maxlength="1000"
+                                            placeholder="Escribe aquí tu consulta..." required></textarea>
+                                        <div class="invalid-feedback">Escribe un mensaje de al menos 10 caracteres.
+                                        </div>
+                                    </div>
+                                    <div class="col-12 d-flex flex-column flex-sm-row align-items-sm-center gap-3">
+                                        <button class="btn btn-primary" type="submit"><i
+                                                class="bi bi-send me-2"></i>Enviar mensaje</button><span
+                                            class="small text-secondary">No ingreses contraseñas ni datos
+                                            sensibles.</span></div>
+                                </div>
+                                <div id="contactoResultado" class="alert mt-4 d-none" role="status" aria-live="polite">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-body-tertiary py-5">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-7">
+                        <p class="section-kicker mb-1">TAMBIÉN HAY QUE APRENDER</p>
+                        <h2 class="fw-bold">¿Qué tecnologías hacen funcionar una web?</h2>
+                        <p class="text-secondary mb-0">Este sitio incluye explicaciones sencillas y ejemplos de
+                            JavaScript, jQuery, JSON, alojamiento web y dominios. Puedes abrir cada tema desde el menú
+                            superior.</p>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="d-flex flex-wrap gap-2"><a class="btn btn-outline-primary"
+                                href="javascript.html">JavaScript</a><a class="btn btn-outline-primary"
+                                href="jquery.html">jQuery</a><a class="btn btn-outline-primary"
+                                href="json.html">JSON</a><a class="btn btn-outline-primary" href="hosting.html">Hosting
+                                y dominios</a><a class="btn btn-primary" href="cuestionario.html">Repasar ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="modal fade" id="interesModal" tabindex="-1" aria-labelledby="interesTitulo" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title fs-5" id="interesTitulo">Gracias por tu interés</h2><button type="button"
+                            class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body" id="interesTexto">Has seleccionado un producto.</div>
+                    <div class="modal-footer"><button type="button" class="btn btn-primary"
+                            data-bs-dismiss="modal">Entendido</button></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="border-top mt-5 py-4">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2"><span
+                class="fw-semibold">ThermoGlow <span class="text-primary">·</span> Tu bebida, tu color.</span><small
+                class="text-secondary">Proyecto educativo de desarrollo web · <span id="anio"></span></small></div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

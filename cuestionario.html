@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es" data-bs-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ThermoGlow: vasos que cambian de color y recursos educativos de desarrollo web.">
+    <title>Cuestionario | ThermoGlow</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+        <div class="container"><a class="navbar-brand fw-bold" href="index.html"><span class="brand-mark"><i
+                        class="bi bi-cup-hot-fill"></i></span> Thermo<span class="text-primary">Glow</span></a><button
+                class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menú"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="javascript.html">JavaScript</a></li>
+                    <li class="nav-item"><a class="nav-link" href="jquery.html">jQuery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="json.html">JSON</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hosting.html">Hosting y dominios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cuestionario.html">Cuestionario</a></li>
+                    <li class="nav-item ms-lg-2"><button class="btn btn-outline-secondary btn-sm" id="btnTema"
+                            type="button" aria-label="Activar tema oscuro"><i class="bi bi-moon-stars-fill"></i><span
+                                class="ms-1 d-lg-none">Cambiar tema</span></button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="container py-5">
+            <div class="topic-header"><span class="badge text-bg-primary-subtle text-primary-emphasis mb-3">Repaso
+                    final</span>
+                <h1 class="display-5 fw-bold">Cuestionario de desarrollo web</h1>
+                <p class="lead text-secondary">Responde las preguntas y revisa tu resultado al terminar.</p>
+            </div>
+            <form id="formCuestionario" class="content-panel mt-4">
+                <fieldset class="quiz-question">
+                    <legend>1. ¿Qué tecnología organiza el contenido de una página?</legend>
+                    <div class="form-check"><input class="form-check-input" type="radio" name="p1" id="p1a" value="a"
+                            required><label class="form-check-label" for="p1a">CSS</label></div>
+                    <div class="form-check"><input class="form-check-input" type="radio" name="p1" id="p1b"
+                            value="b"><label class="form-check-label" for="p1b">HTML</label></div>
+                    <div class="form-check"><input class="form-check-input" type="radio" name="p1" id="p1c"
+                            value="c"><label class="form-check-label" for="p1c">JSON</label></div>
+                </fieldset>
+                <fieldset class="quiz-question">
+                    <legend>2. ¿Para qué se usa principalmente JavaScript en una página?</legend>
+                    <div class="form-check"><input class="form-check-input" type="radio" name="p2" id="p2a" value="a"
+                            required><label class="form-check-label" for="p2a">Para añadir interactividad y
+                            comportamiento</label></div>
+                    <div class="form-check"><input class="form-check-input" type="radio" name="p2" id="p2b"
+                            value="b"><label class="form-check-label" for="p2b">Para registrar un dominio</label></div>
+                    <div class="form-check"><input class="form-check-input" type="radio" name="p2" id="p2c"
+                            value="c"><label class="form-check-label" for="p2c">Para alojar archivos en un
+                            servidor</label></div>
+                </fieldset>
+                <fieldset class="quiz-question">
+                    <legend>3. ¿Qué es jQuery?</legend>
+                    <div class="form-check"><input class="form-check-input" type="radio" name="p3" id="p3a" value="a"
+                            required><label class="form-check-label" for="p3a">Un sistema de dominios</label></div>
+                    <div class="form-check"><input class="form-check-input" type="radio" name="p3" id="p3b"
+                            value="b"><label class="form-check-label" for="p3b">Una biblioteca de JavaScript</label>
+                    </div>
+                    <div class="form-check"><input class="form-check-input" type="radio" name="p3" id="p3c"
+                            value="c"><label class="form-check-label" for="p3c">Un formato de imagen</label></div>
+                </fieldset>
+                <fieldset class="quiz-question">
+                    <legend>4. ¿Cuál afirmación sobre JSON es correcta?</legend>
+                    <div class="form-check"><input class="form-check-input" type="radio" name="p4" id="p4a" value="a"
+                            required><label class="form-check-label" for="p4a">Es un formato de texto para intercambiar
+                            datos</label></div>
+                    <div class="form-check"><input class="form-check-input" type="radio" name="p4" id="p4b"
+                            value="b"><label class="form-check-label" for="p4b">Es un tipo de hosting</label></div>
+                    <div class="form-check"><input class="form-check-input" type="radio" name="p4" id="p4c"
+                            value="c"><label class="form-check-label" for="p4c">Es una extensión de CSS</label></div>
+                </fieldset>
+                <fieldset class="quiz-question">
+                    <legend>5. ¿Qué función cumple el hosting?</legend>
+                    <div class="form-check"><input class="form-check-input" type="radio" name="p5" id="p5a" value="a"
+                            required><label class="form-check-label" for="p5a">Da estilo a los botones</label></div>
+                    <div class="form-check"><input class="form-check-input" type="radio" name="p5" id="p5b"
+                            value="b"><label class="form-check-label" for="p5b">Guarda los archivos del sitio en un
+                            servidor</label></div>
+                    <div class="form-check"><input class="form-check-input" type="radio" name="p5" id="p5c"
+                            value="c"><label class="form-check-label" for="p5c">Crea automáticamente todas las
+                            páginas</label></div>
+                </fieldset>
+                <fieldset class="quiz-question">
+                    <legend>6. ¿Qué es un dominio?</legend>
+                    <div class="form-check"><input class="form-check-input" type="radio" name="p6" id="p6a" value="a"
+                            required><label class="form-check-label" for="p6a">El nombre o dirección que se utiliza para
+                            encontrar un sitio</label></div>
+                    <div class="form-check"><input class="form-check-input" type="radio" name="p6" id="p6b"
+                            value="b"><label class="form-check-label" for="p6b">Un lenguaje de programación</label>
+                    </div>
+                    <div class="form-check"><input class="form-check-input" type="radio" name="p6" id="p6c"
+                            value="c"><label class="form-check-label" for="p6c">Una etiqueta HTML</label></div>
+                </fieldset>
+                <div class="d-flex flex-wrap gap-2 mt-4"><button type="submit" class="btn btn-primary btn-lg">Calificar
+                        respuestas</button><button type="reset" class="btn btn-outline-secondary btn-lg"
+                        id="btnLimpiar">Volver a empezar</button></div>
+                <div id="resultadoQuiz" class="alert mt-4 d-none" role="status" aria-live="polite"></div>
+            </form>
+            <div class="text-center mt-4"><a href="javascript.html" class="btn btn-link">Repasar JavaScript</a><a
+                    href="jquery.html" class="btn btn-link">Repasar jQuery</a><a href="json.html"
+                    class="btn btn-link">Repasar JSON</a><a href="hosting.html" class="btn btn-link">Repasar hosting</a>
+            </div>
+        </section>
+    </main>
+    <footer class="border-top mt-5 py-4">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2"><span
+                class="fw-semibold">ThermoGlow <span class="text-primary">·</span> Tu bebida, tu color.</span><small
+                class="text-secondary">Proyecto educativo de desarrollo web · <span id="anio"></span></small></div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

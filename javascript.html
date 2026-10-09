@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es" data-bs-theme="light">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ThermoGlow: vasos que cambian de color y recursos educativos de desarrollo web.">
+  <title>JavaScript | ThermoGlow</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/estilos.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+    <div class="container"><a class="navbar-brand fw-bold" href="index.html"><span class="brand-mark"><i
+            class="bi bi-cup-hot-fill"></i></span> Thermo<span class="text-primary">Glow</span></a><button
+        class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav"
+        aria-expanded="false" aria-label="Abrir menú"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="javascript.html">JavaScript</a></li>
+          <li class="nav-item"><a class="nav-link" href="jquery.html">jQuery</a></li>
+          <li class="nav-item"><a class="nav-link" href="json.html">JSON</a></li>
+          <li class="nav-item"><a class="nav-link" href="hosting.html">Hosting y dominios</a></li>
+          <li class="nav-item"><a class="nav-link" href="cuestionario.html">Cuestionario</a></li>
+          <li class="nav-item ms-lg-2"><button class="btn btn-outline-secondary btn-sm" id="btnTema" type="button"
+              aria-label="Activar tema oscuro"><i class="bi bi-moon-stars-fill"></i><span class="ms-1 d-lg-none">Cambiar
+                tema</span></button></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section class="container py-5">
+      <div class="topic-header"><span class="badge text-bg-primary-subtle text-primary-emphasis mb-3">Tema 01 ·
+          Interactividad</span>
+        <h1 class="display-5 fw-bold">JavaScript</h1>
+        <p class="lead text-secondary">El lenguaje que permite que una página web responda a lo que hace la persona que
+          la visita.</p>
+      </div>
+      <div class="row g-4 mt-2">
+        <div class="col-lg-7">
+          <div class="content-panel">
+            <h2 class="h4">¿Qué es JavaScript?</h2>
+            <p>JavaScript es un lenguaje de programación usado principalmente para agregar comportamiento a las páginas
+              web. Con él se pueden validar formularios, abrir ventanas, cambiar textos, actualizar datos y responder a
+              clics.</p>
+            <h3 class="h5 mt-4">HTML, CSS y JavaScript no hacen lo mismo</h3>
+            <div class="table-responsive">
+              <table class="table table-bordered align-middle">
+                <thead class="table-light">
+                  <tr>
+                    <th>Tecnología</th>
+                    <th>Función</th>
+                    <th>Ejemplo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>HTML</td>
+                    <td>Organiza el contenido.</td>
+                    <td>Título, imagen o formulario.</td>
+                  </tr>
+                  <tr>
+                    <td>CSS</td>
+                    <td>Define la presentación.</td>
+                    <td>Colores, tamaño y distribución.</td>
+                  </tr>
+                  <tr>
+                    <td>JavaScript</td>
+                    <td>Añade comportamiento.</td>
+                    <td>Un botón que cambia un mensaje.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <h3 class="h5 mt-4">Variables, funciones y eventos</h3>
+            <ul>
+              <li><strong>Variable:</strong> guarda un dato, por ejemplo el nombre de un producto.</li>
+              <li><strong>Función:</strong> reúne instrucciones que se pueden ejecutar cuando hacen falta.</li>
+              <li><strong>Evento:</strong> algo que ocurre, como pulsar un botón o mover el puntero.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="content-panel demo-panel">
+            <h2 class="h5">Prueba un ejemplo</h2>
+            <p class="text-secondary">Pulsa el botón y JavaScript cambiará el texto.</p>
+            <div class="demo-screen"><i class="bi bi-hand-index-thumb fs-2 text-primary"></i>
+              <p id="mensajeDemo" class="fw-semibold mt-3 mb-0">Hola, bienvenido a ThermoGlow.</p>
+            </div><button id="btnDemo" class="btn btn-primary w-100 mt-3">Cambiar mensaje</button>
+            <pre class="code-sample mt-3"><code>const boton = document.querySelector("#btnDemo");
+boton.addEventListener("click", () => {
+  document.querySelector("#mensajeDemo").textContent =
+    "¡El botón funciona!";
+});</code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="content-panel mt-4">
+        <h2 class="h4">Ventajas y usos comunes</h2>
+        <div class="row g-3">
+          <div class="col-md-4">
+            <h3 class="h6"><i class="bi bi-check-circle text-success me-2"></i>Interactividad</h3>
+            <p class="text-secondary mb-0">Hace que los controles respondan sin recargar toda la página.</p>
+          </div>
+          <div class="col-md-4">
+            <h3 class="h6"><i class="bi bi-check-circle text-success me-2"></i>Validación</h3>
+            <p class="text-secondary mb-0">Ayuda a revisar datos de formularios antes de enviarlos.</p>
+          </div>
+          <div class="col-md-4">
+            <h3 class="h6"><i class="bi bi-check-circle text-success me-2"></i>Contenido dinámico</h3>
+            <p class="text-secondary mb-0">Permite actualizar textos, listas y elementos de la interfaz.</p>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between mt-4"><a class="btn btn-outline-secondary" href="index.html"><i
+            class="bi bi-arrow-left me-1"></i>Inicio</a><a class="btn btn-primary" href="jquery.html">Siguiente: jQuery
+          <i class="bi bi-arrow-right ms-1"></i></a></div>
+    </section>
+  </main>
+  <footer class="border-top mt-5 py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2"><span
+        class="fw-semibold">ThermoGlow <span class="text-primary">·</span> Tu bebida, tu color.</span><small
+        class="text-secondary">Proyecto educativo de desarrollo web · <span id="anio"></span></small></div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
